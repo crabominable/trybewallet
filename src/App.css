@@ -1,38 +1,218 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: rgb(248, 248, 248);
+  height: 100%;
+  width: 100%
+}
+
+.main-login {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 59.5em;
+  width: 100%;
+}
+
+.left-side {
+  align-items: center;
+  background-color: rgb(160, 220, 255);
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  justify-content:center;
+  width: 50%;
+}
+
+.left-side img {
+  height: 70%;
+  width: 70%;
+}
+
+.left-side p {
+  font-size: 17px;
+  width: 40%;
+}
+
+.coin {
+  color: rgb(255, 233, 107);
+  margin-left: 6px;
+}
+
+.right-side {
+  align-items: center;
+  background-color: rgb(231, 240, 241);
+  border: 3px solid rgb(219, 233, 231);
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  justify-content: center;
+  width: 50%;
+}
+
+.top-text-content {
+  align-self: flex-start;
+  justify-self: flex-start;
+  right: 12%;
+  position: absolute;
+  top: 14%;
+}
+
+.top-text-content h2 {
+  color: rgb(37, 37, 37);
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.form-container {
+  align-items: center;
+  background-color: rgba(246, 246, 246, 0.8);
+  border-radius: 12px;
+  display: flex;
+  flex-flow: column;
+  height: 42%;
+  justify-content: center;
+  width: 44%;
+}
+
+.form-container h1 {
+  color: rgb(26, 26, 26);
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.fieldset-login-form {
+  display: flex;
+  flex-flow: column;
+  width: 18em;
+}
+
+.email-input-id {
+  margin-bottom: 1em;
+}
+
+.button-content {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  text-decoration: none;
+  padding-top: 2em;
+  width: 100%;
+}
+
+.submit-input-id {
+  background-color: rgb(91, 219, 198);
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  color: rgb(36, 36, 36);
+  font-size: 17px;
+  height: 3em;
+  transition: 0.4s;
+  width: 10em;
+}
+
+.submit-input-id:hover {
+  background-color: rgb(76, 184, 166);
+  color: rgb(240, 255, 255);
+  transition: 0.4s;
+}
+
+.header {
+  align-items:center;
+  background-color: rgb(91, 197, 230);
+  color: rgb(32, 32, 32);
+  display: flex;
+  flex-flow: row;
+  height: 6em;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.header-item {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.header-item p {
+  font-size: 19px;
+  line-height: 2px;
+}
+
+.span-header-user {
+  color: rgb(246, 246, 246);
+  font-size: 22px;
+}
+
+.span-header {
+  color: rgb(0, 241, 0);
+  font-size: 24px;
+}
+
+.span-header-brl {
+  color: rgb(246, 246, 246);
+  font-size: 22px;
+}
+
+.email-class {
+  margin-left: 1em;
+}
+
+.form-class {
+  align-items: baseline;
+  background-color: rgb(161, 219, 236);
+  color: rgb(32, 32, 32);
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 17px;
+  justify-content: space-around;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.table {
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-collapse: collapse;
+  font-size:0.9em;
+  min-width: 400px;
+  overflow: hidden;
+}
+
+.table thead tr {
+  background-color: rgb(91, 197, 230);
+  border: 0px solid rgba(0, 0, 0, 0);
+  color: #000;
+  font-weight: bold;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table th,
+.table td {
+  border: 0px solid rgba(0, 0, 0, 0);
+  padding:12px 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table tbody tr {
+  border-bottom: 1px solid #ddd;
+  line-height: 2em;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.table tbody tr:nth-of-type(even) {
+  background-color: rgb(161, 219, 236);
 }
 
-.App-link {
-  color: #61dafb;
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid #009bd8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#edit-button {
+  margin-right: 4px;
 }
